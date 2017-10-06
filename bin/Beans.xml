@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean id="helloWorld" class="HelloWorld" init-method="init" destroy-method="destroy"> 
+		<property name="message" value="Hello World!" /> <property name="id" value="0301123805"></property> 
+		</bean> <bean id="example" class="ExampleBean"></bean> <bean id="guilty" 
+		class="InitHelloWorld"></bean> <bean id="bean_inheritance" class="bean_definition_inheritance.HelloWorld"> 
+		<property name="message1" value="Hello World"></property> <property name="message2" 
+		value="Hello Skype"></property> </bean> <bean id="bean_inheritance_2" class="bean_definition_inheritance.HelloBangladesh" 
+		parent="bean_inheritance"> <property name="message1" value="Hello Bangladesh"></property> 
+		<property name="message3" value="Wellcome to dhaka"></property> </bean> -->
+
+
+	<bean id="inner_class" class="inner_bean.TextEditor">
+		<property name="spellChecker">
+			<bean class="inner_bean.SpellChecker"></bean>
+		</property>
+	</bean>
+</beans>
